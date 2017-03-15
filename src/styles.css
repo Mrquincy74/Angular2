@@ -1,1 +1,182 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900|Roboto:400,100);
+
+body { background-color: #fff; padding: 20px; }
+
+#myQuiz {
+  /*font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;*/
+  /*width: 650px; height: 750px;*/
+  /*position: relative;*/
+  /*overflow: hidden;*/
+  /*height:750px;*/
+  /*overflow:inherit;*/
+  //color: #fff;
+  background: #00bcd4;
+}
+.sebm-google-map-container {
+  height: 500px;
+  padding:12px;
+
+}
+
+/*Badge Button  */
+/*.badgeHolder {
+  width: 100px;
+  padding: 20px;
+  margin: auto;
+}*/
+.badge-button {
+  background: #1b5591;
+  padding: 7px 14px;
+  border-radius: 45px;
+  position: relative;
+}
+.badge-xs {
+  position: absolute;
+  top: 7px;
+  right: -7px;
+  font-size: 9px;
+  background: #d8e7fc;
+  padding: 5px;
+  color: #333;
+}
+.menu{
+  background-color: white;
+}
+
+
+.progress-striped active{
+  background-color:#c04b01;
+
+}
+.btn{
+  display: inline-block; cursor: pointer; background-color: #c04b01;
+  color: #fff; text-decoration: none;
+  padding: 5px 15px; border-radius: 6px;
+}
+
+#myQuiz h1{
+  font-family: 'Titillium+Web', sans-serif;
+  font-size: 2em;
+  color: #fff;
+  font-weight:100;
+}
+#myQuiz h1 span {
+  display: block; font-weight: normal; font-family: 'Roboto';
+  font-size: 3.2em; line-height: 85px;
+}
+h2{
+  font-weight:normal;
+}
+
+hr{
+  border:none;
+  border-top:1px solid #ddd;
+  background:none;
+  margin:8px 0;
+}
+
+.option{
+  //background-color: #28ee72;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid #e8e4db;
+  font-size:20px;
+  padding:10px;
+  margin:3px;
+  border-radius: 6px;
+}
+.option label{
+  font-weight:normal;
+}
+.options input[type=circle] {
+  display: inline-block;
+  font-size: 1.1em;
+  width: 225px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px; padding: 10px; margin: 0px 15px 15px 0px;
+  position: relative;
+}
+.options input[type=circle] {
+  background-color:#eee;
+  border:1px solid #ccc;
+  height:22px;
+  width:22px;
+}
+
+div.review{
+  text-align:center;
+}
+div.review > div {
+  cursor:pointer;
+}
+
+.answered {
+  background-color:#ccffcc;
+  border:1px solid #aaeeaa;
+  margin:2px 0;
+  padding:12px;
+}
+
+.not-answered {
+  background-color:#ffcccc;
+  border:1px solid #eeaaaa;
+  margin:2px 0;
+  padding:12px;
+}
+
+.result-question{
+  border: 2px solid #e8e4db;
+  //background-color: #3c3f41;
+  border-radius: 6px;
+  margin:4px;
+  padding:6px;
+
+}
+
+
+/* Create Quiz Styles */
+.create-quiz .question {
+  text-align:left;
+}
+.create-quiz input[type=text]{
+  border:1px solid #ddd;
+  width:95%;
+}
+.create-quiz .tb-quiz-name{
+  background-color:#ccffcc;
+  text-align:center;
+}
+
+.create-quiz .tb-desc{
+  background-color:#ffff;
+}
+
+.create-quiz .options > div{
+  margin-left:20px;
+}
+.create-quiz .options input[type=radio]{
+  border: 2px solid #262626;
+  display: inline-block;
+  height:20px;
+  margin-top:10px;
+  margin-bottom:0;
+  padding:0;
+  width:20px;
+  -webkit-appearance:checkbox;
+}
+
+@media only screen and (max-width: 480px) {
+  h1,.h1{
+    font-size:22px;
+  }
+  h2,.h2{
+    font-size:20px;
+  }
+  h3,.h3{
+    font-size:18px;
+  }
+  .option {
+    font-size: 16px;
+    padding: 6px;
+  }
+}
