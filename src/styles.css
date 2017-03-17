@@ -1,34 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:900|Roboto:400,100);
 
-body { background-color: #fff; padding: 20px; }
+/*body { background-color: #fff; padding: 20px;
+padding-bottom: inherit;
+}*/
+
+html, body{
+  background: #e8e4db;
+  border: 2px solid #e8e4db;
+  //border-radius: 2px;
+  margin:0;
+  padding: 0;
+  height: 100%;
+}
 
 #myQuiz {
-  /*font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;*/
-  /*width: 650px; height: 750px;*/
-  /*position: relative;*/
-  /*overflow: hidden;*/
-  /*height:750px;*/
-  /*overflow:inherit;*/
-  //color: #fff;
+  color: #fff;
   background: #00bcd4;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 100%;
 }
+
+/* Block Quote */
+.blockquote{
+  color: #212121;
+}
+/* Map Container */
 .sebm-google-map-container {
   height: 500px;
   padding:12px;
 
 }
 
-/*Badge Button  */
-/*.badgeHolder {
-  width: 100px;
-  padding: 20px;
-  margin: auto;
-}*/
 .badge-button {
-  background: #1b5591;
+  background-color: #c04b01;
   padding: 7px 14px;
-  border-radius: 45px;
+  border-radius: 6px;
   position: relative;
 }
 .badge-xs {
@@ -44,16 +52,17 @@ body { background-color: #fff; padding: 20px; }
   background-color: white;
 }
 
-
-.progress-striped active{
-  background-color:#c04b01;
-
+.btn btn-color{
+  background-color: #c04b01;
 }
-.btn{
-  display: inline-block; cursor: pointer; background-color: #c04b01;
+.button.md-raised-button{
+  display: inline-block; cursor: pointer;
+  background-color: #c04b01;
   color: #fff; text-decoration: none;
   padding: 5px 15px; border-radius: 6px;
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.26);
 }
+
 
 #myQuiz h1{
   font-family: 'Titillium+Web', sans-serif;
@@ -67,6 +76,7 @@ body { background-color: #fff; padding: 20px; }
 }
 h2{
   font-weight:normal;
+  color: #fff;
 }
 
 hr{
@@ -77,7 +87,7 @@ hr{
 }
 
 .option{
-  //background-color: #28ee72;
+  background-color: rgba(112,112,112,.2);
   font-family: 'Roboto', sans-serif;
   border: 2px solid #e8e4db;
   font-size:20px;
@@ -110,28 +120,32 @@ div.review > div {
   cursor:pointer;
 }
 
+/* Results not answered background */
 .answered {
-  background-color:#ccffcc;
+  background-color:rgba(0, 128, 0, .2);
+
   border:1px solid #aaeeaa;
   margin:2px 0;
   padding:12px;
 }
 
 .not-answered {
-  background-color:#ffcccc;
-  border:1px solid #eeaaaa;
+  background-color:rgba(255, 0, 0, .2);
+  border:1px solid #FFFFFF;
   margin:2px 0;
   padding:12px;
 }
 
 .result-question{
-  border: 2px solid #e8e4db;
-  //background-color: #3c3f41;
+  background-color: rgba(112,112,112,.2);
+  /*background-color: #3c3f41;*/
+  border:1px solid #FFFFFF;
   border-radius: 6px;
   margin:4px;
   padding:6px;
 
 }
+
 
 
 /* Create Quiz Styles */
@@ -160,7 +174,7 @@ div.review > div {
   height:20px;
   margin-top:10px;
   margin-bottom:0;
-  padding:0;
+  padding:10px;
   width:20px;
   -webkit-appearance:checkbox;
 }

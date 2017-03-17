@@ -1,12 +1,15 @@
 // Intro Component for quiz app
 
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import {QuizService} from "../services/quiz.service";
+import { RippleDirective } from 'ng2-ripple-directive';
 @Component({
   selector: 'app-intro',
-  templateUrl:'./intro.component.html',
-  //styleUrls: ['./intro.component.css']
+template:`
+<app-quiz></app-quiz>
+`,
   providers:[QuizService],
+
 })
 export class IntroComponent  {
 

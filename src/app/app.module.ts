@@ -6,17 +6,17 @@ import {RouterModule, Routes} from '@angular/router'
 import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
 import { QuizComponent } from './quiz/quiz.component';
-import { ErrorComponent } from './error/error.component';
+import { DemoComponent } from './demoMap/demo.component';
 import { AgmCoreModule } from 'angular2-google-maps/core';
+import { MaterialModule } from '@angular/material';
 
 
 //path's to routes//
 const appRoutes: Routes = [
   {path: 'intro-component', component: IntroComponent},
-  {path: 'quiz', component: QuizComponent},
-  {path: 'error', component: ErrorComponent},
-  {path: '', redirectTo: '/quiz', pathMatch: 'full'},
-  {path: '**', component:ErrorComponent }
+  {path: 'google-map', component: DemoComponent},
+  {path: '', redirectTo: '/intro-component', pathMatch: 'full'},
+  {path: '**', component:DemoComponent }
 
 ];
 
@@ -25,6 +25,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
+    MaterialModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyBihJ58JFKrau83aHD4FLO-dESQm1MXRcc'
     }),
@@ -35,7 +36,7 @@ const appRoutes: Routes = [
     AppComponent,
     IntroComponent,
     QuizComponent,
-    ErrorComponent
+    DemoComponent
   ],
 
 
